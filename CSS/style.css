@@ -18,6 +18,9 @@ h1, h2, h3, a, i, p{
     width: 190px;
     margin: 0px 45px;
     padding: 0px;
+}
+
+.image-float{
     transform: translateY(-40px);
 }
 
