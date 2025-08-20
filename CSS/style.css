@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Merienda:wght@300..900&display=swap');
+
+:root{
+    --Text-color: rgba(255, 255, 255, 0.75);
+
+}
+
+body {
+    background: url(../Image/backgroud.jpg) no-repeat top/cover;
+}
+
+h1, h2, h3, a, i, p{
+    color: var(--Text-color) !important;
+}
+
+.image-logo{
+    height: 245px;
+    width: 190px;
+    margin: 0px 45px;
+    padding: 0px;
+    transform: translateY(-40px);
+}
+
+/* Header Section CSS */
+
+header{
+    background: url(../Image/backgroud.jpg) no-repeat top/cover;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Card Style CSS */
+
+.glass{
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8.05px);
+}
+
+.br-radius{
+    border-radius: 70px;
+}
+
+
+/* Home Section CSS */
+
+.home{
+    padding: 80px 0px;
+}
+
+
+/* trendy-plants section CSS */
+
+.trendy-title{
+    padding: 1px 0px 30px 0px;
+}

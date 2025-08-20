@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./Image/logo.png" type="image/png">
+    <title>Planto</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light shadow p-3 rounded py-3 ">
+            <div class="container">
+                <img src="./Image/logo.png" alt="logo" height="26" width="26">
+                <a class="navbar-brand fw-bold" href="#home">Planto</a>
+
+                <button class="navbar-toggler shadow-none p-1 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="d-flex mx-auto py-0 ps-5">
+                        <ul class="navbar-nav mb-2 mb-lg-0 fs-07 nav-btns">
+                            <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                            <li class="nav-item dropdown px-3">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Plants Type
+                                </a>
+                                <ul class="dropdown-menu glass">
+                                    <li><a class="dropdown-item" href="#trendy-plants">Trendy Plants</a></li>
+                                    <li><a class="dropdown-item" href="#top-selling">Top Selling</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link px-3" href="#programs">Reviews</a></li>
+                            <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-nav ms-5 ps-5 me-0 nav-btns">
+
+                        <button class="btn me-2" id="themeToggle">
+                            <i class="fa-solid fa-moon" id="themeIcon"></i>
+                        </button>
+                        
+                        <button class="btn me-2" id="themeToggle">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                        <button class="btn me-2" id="themeToggle">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="home-title">
+                        <h1>Breath Natural</h1>
+                        <p>Step into a world where your home thrives with life, your soul feels lighter, and every corner blossoms with the natural touch of greenery.</p>
+                    </div>
+                    <div class="home-btn">
+                        <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                        <a class="btn btn-outline-light ms-4 px-4" href=""><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                    </div>
+                    <div class="home-reviews">
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- trendy-plants section -->
+    <section class="trendy-plants" id="trendy-plants">
+        <div class="container">
+            <div class="text-center my-5">
+                <h2>trendy Plants</h2>
+            </div>
+            <div>
+                <div class="row align-items-end glass br-radius mb-5 pe-5">
+                    <div class="col-sm-12 col-md-4">
+                        <img class="image-logo" src="./Image/Plant (6).png" alt="Plant-img">
+                    </div>
+                    <div class="col-sm-12 col-md-8 trendy-title">
+                        <h2>Monstera Deliciosa</h2>
+                        <p>Known as the “Swiss Cheese Plant,” its large split leaves create a bold tropical statement. It grows quickly and thrives in bright, indirect light, making it a favorite for stylish interiors.</p>
+                        <p>Price: ৳3,250 – ৳10,400</p>
+                        <div class="home-btn">
+                            <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                            <a class="btn btn-outline-light" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row align-items-end glass br-radius mb-5 px-5">
+                    <div class="col-sm-12 col-md-8 trendy-title">
+                        <h2>Fiddle Leaf Fig</h2>
+                        <p>With its big violin-shaped leaves, it’s one of the most Instagram-famous plants. It loves bright light and instantly adds elegance and height to living rooms or offices.</p>
+                        <p>Price: ৳3,900 – ৳13,000</p>
+                        <div class="home-btn">
+                            <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                            <a class="btn btn-outline-light" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img class="image-logo" src="./Image/Plant (2).png" alt="Plant-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- top-selling section -->
+
+    <section id="top-selling" class="top-selling">
+        <div class="container">
+            <div class="text-center my-5">
+                <h2 class="">Our Top Selling</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <img src="" alt="plant-img">
+                        <h3 class="fw-bolder">Monstera Deliciosa</h3>
+                        <p>Known as the “Swiss Cheese Plant,” its large split leaves create a bold tropical statement. It grows quickly and thrives in bright, indirect light, making it a favorite for stylish interiors.</p>
+                        <div class="home-btn">
+                            <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                            <a class="btn btn-outline-light" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <img src="" alt="plant-img">
+                        <h3 class="fw-bolder">Fiddle Leaf Fig</h3>
+                        <p>With its big violin-shaped leaves, it’s one of the most Instagram-famous plants. It loves bright light and instantly adds elegance and height to living rooms or offices.</p>
+                        <div class="home-btn">
+                            <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                            <a class="btn btn-outline-light" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <img src="" alt="plant-img">
+                        <h3 class="fw-bolder">Rubber Plant</h3>
+                        <p>Strong, glossy leaves in green, burgundy, or variegated patterns make it versatile and beautiful. It’s hardy, low-maintenance, and also improves indoor air quality.</p>
+                        <div class="home-btn">
+                            <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                            <a class="btn btn-outline-light" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <img src="" alt="plant-img">
+                        <h3 class="fw-bolder">Snake Plant (Sansevieria)</h3>
+                        <p>One of the best plants for oxygen production, especially at night. Its tall, upright leaves make it perfect for bedrooms and modern spaces.</p>
+                        <div class="home-btn">
+                            <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                            <a class="btn btn-outline-light" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <img src="" alt="plant-img">
+                        <h3 class="fw-bolder">Peace Lily</h3>
+                        <p>Combines elegance with function, featuring white blooms and glossy leaves. It removes toxins like formaldehyde and benzene while looking stunning indoors.</p>
+                        <div class="home-btn">
+                            <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                            <a class="btn btn-outline-light" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <img src="" alt="plant-img">
+                        <h3 class="fw-bolder">Areca Palm</h3>
+                        <p>Beyond décor, it’s known as one of the top oxygen-producing plants. It also humidifies the air, keeping indoor spaces fresh.</p>
+                        <div class="home-btn">
+                            <a class="btn btn-outline-light me-4 px-4" href="">Explore</a>
+                            <a class="btn btn-outline-light" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+
+    <section>
+        <div class="container">
+            <div class="text-center my-5">
+                <h2>Customer Review</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <img class="br-radius ms-4 mt-3 mb-3"src="./Image/Person-1.jpg" alt="plant-img" height="66" width="66">
+                            </div>
+                            <div class="col-sm-8 col-md-8 col-lg-8 mt-3 mb-3">
+                                <h3>Maxn Raval</h3>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p>“I ordered multiple plants from here, and honestly, all of them arrived fresh and healthy. Very satisfied!”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <img class="br-radius ms-4 mt-3 mb-3" src="./Image/Person-2.jpg" alt="plant-img" height="66" width="66">
+                            </div>                           
+                            <div class="col-sm-8 col-md-8 col-lg-8 mt-3 mb-3">
+                                <h3>venely k</h3>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p>“Best plant shop I’ve purchased from. The packaging was safe, and the plants look exactly like the pictures.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 program-card">
+                    <div class="glass">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <img class="br-radius ms-4 mt-3 mb-3" src="./Image/Person-3.jpg" alt="plant-img" height="66" width="66">
+                            </div>
+                            <div class="col-sm-8 col-md-8 col-lg-8 mt-3 mb-3">
+                                <h3>Lii thakur</h3>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p>This shop has completely changed the vibe of my home. Thank you for providing such fresh and beautiful plants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O2 -->
+
+    <section>
+        <div class="container">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer>
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="d-flex align-items-center">
+                        <img src="./Image/logo.png" alt="logo" height="55" width="55">
+                        <h2 class="pt-3">Planto</h2>
+                    </div>
+                    <p>“Step into a world where your home thrives with life, your soul feels lighter, and every corner blossoms with the natural touch of greenery.”</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a class="btn" href="#home">Home</a></li>
+                        <li><a class="btn" href="#services">Services</a></li>
+                        <li><a class="btn" href="#portfolio">Portfolio</a></li>
+                        <li><a class="btn" href="#about">About Us</a></li>
+                        <li><a class="btn" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <p>&copy; 2023 WebCraft. All Rights Reserved.</p>
+                </div>
+                <div class="">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js" integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
