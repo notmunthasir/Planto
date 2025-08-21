@@ -6,12 +6,18 @@
 }
 
 body {
-    background: url(../Image/backgroud.jpg) no-repeat top/cover;
+    background: url(../Image/background.jpg) no-repeat top/cover;
 }
 
 h1, h2, h3, a, i, p{
     color: var(--Text-color) !important;
 }
+
+.padding{
+    padding-top: 30px;
+}
+
+/* Image Style CSS */
 
 .image-logo{
     height: 245px;
@@ -24,17 +30,19 @@ h1, h2, h3, a, i, p{
     transform: translateY(-40px);
 }
 
-/* Header Section CSS */
+/* Card Style CSS */
 
-header{
-    background: url(../Image/backgroud.jpg) no-repeat top/cover;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+.card{
+    min-height: 450px;
+    max-width: 360px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0px 40px;
 }
 
-
-/* Card Style CSS */
+.card-flout{
+    transform: translateY(-40px);
+}
 
 .glass{
     box-sizing: border-box;
@@ -47,15 +55,46 @@ header{
 }
 
 
-/* Home Section CSS */
+/* Header Section CSS */
 
-.home{
-    padding: 80px 0px;
+header{
+    background: url(../Image/bg-short.jpg) no-repeat top/cover;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
+/* home section CSS */
+
+.home{
+    padding: 100px;
+}
+
+.home-reviews{
+    padding-top: 120px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.home-title>p{
+    font-size: 20px;
+}
 
 /* trendy-plants section CSS */
 
-.trendy-title{
+.title{
     padding: 1px 0px 30px 0px;
+}
+
+.little-box{
+    max-width: 360px;
+    border-radius: 25px;
+}
+
+/* Footer Style CSS */
+
+footer{
+    background: url(../Image/bg-short.jpg) no-repeat top/cover;
 }
