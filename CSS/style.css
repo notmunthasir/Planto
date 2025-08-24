@@ -2,16 +2,19 @@
 
 :root{
     --Text-color: rgba(255, 255, 255, 0.75);
-
+    --secondary-color: rgb(64 64 64 / 10%);
 }
 
 body {
     background: url(../Image/background.jpg) no-repeat top/cover;
 }
 
-h1, h2, h3, a, i, p{
+h1, h2, h3, a, i, p, .white{
     color: var(--Text-color) !important;
 }
+
+h1, h2, h3, h4{font-family: "Merienda", cursive;}
+a, i, p, .white{font-family: "Delius", cursive;}
 
 .padding{
     padding-top: 30px;
@@ -30,30 +33,34 @@ h1, h2, h3, a, i, p{
     transform: translateY(-40px);
 }
 
+.icon{color: rgb(82 101 33) !important;}
+
 /* Card Style CSS */
 
 .card{
     min-height: 450px;
-    max-width: 360px;
+    max-width: 400px;
     border-radius: 30px;
     text-align: center;
     padding: 0px 40px;
+    margin-bottom: 40px;
 }
 
 .card-flout{
     transform: translateY(-40px);
+    transition: all linear 0.25s;
 }
 
 .glass{
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8.05px);
+    transition: all linear 0.4s;
 }
 
 .br-radius{
     border-radius: 70px;
 }
-
 
 /* Header Section CSS */
 
@@ -85,7 +92,7 @@ h1{
 /* trendy-plants section CSS */
 
 .title{
-    padding: 1px 0px 30px 0px;
+    padding-bottom: 30px;
 }
 
 .little-box{
@@ -98,3 +105,161 @@ h1{
 footer{
     background: url(../Image/bg-short.jpg) no-repeat top/cover;
 }
+
+.SUBSCRIBE {
+    position: relative;
+}
+
+.SUBSCRIBE input {
+    width: 100%;
+    padding: 12px 60px 12px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.SUBSCRIBE input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.SUBSCRIBE input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.SUBSCRIBE button {
+    position: absolute;
+    right: 60px;
+    top: 5px;
+    width: 40px;
+    height: calc(100% - 10px);
+    background-color: rgb(64 64 64 / 10%);
+    border: none;
+    color: var(--Text-color);
+    cursor: pointer;
+}
+
+/* section Title CSS */
+
+.section-title{
+    position: relative;
+}
+
+.section-title::after{
+    position: absolute;
+    content: "";
+    top: 13px;
+    height: 30px;
+    width: 30px;
+    border: 3px solid green;
+    border-bottom: 0px;
+    border-left: 0px;
+    transform: translate(-50%, -50%);
+    transition: all linear 0.25s;
+    animation: color-flow 2s ease-in-out infinite;
+}
+
+.section-title::before{
+    position: absolute;
+    content: "";
+    top: 27px;
+    height: 30px;
+    width: 30px;
+    border: 3px solid green;
+    border-top: 0px;
+    border-right: 0px;
+    transform: translate(-50%, -50%);
+    transition: all linear 0.25s;
+    animation: color-flow 2s ease-in-out infinite;
+}
+
+/* Hover Style CSS */
+
+.glass:hover .card-flout{
+    transform: translateY(20px);
+}
+
+.glass:hover{
+    transform: scale(1.05);
+    backdrop-filter: blur(12px);
+}
+
+.carousel-inner:hover{
+    overflow: visible;
+}
+
+.btn:hover, .btn:hover i{
+    color: black !important;
+}
+
+/* Animation Color */
+
+@keyframes color-flow{
+    0%{border-color: yellow;}
+    25%{border-color: chartreuse;}
+    50%{border-color: red;}
+    75%{border-color: blue;}
+    100%{border-color: orange;}
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/***===--- Animation ---===***/
+
+.header{transition: all linear 0.25s; animation: slideInUp 1s ease-in-out; animation-delay: 0.0s;}
+.main-title{transition: all linear 0.25s; animation: slideInLeft 1s ease-in-out; animation-delay: 0.1s;}
+.home-reviews{transition: all linear 0.25s; animation: slideInLeft 1s ease-in-out; animation-delay: 0.2s;}
+.plants-card{transition: all linear 0.25s; animation: slideInRight 1s ease-in-out; animation-delay: 0.2s;}
+.section-title{transition: all linear 0.25s; animation: fadeIn 1s ease-in-out; animation-delay: 0.3s;}
+.trendy-card{transition: all linear 0.25s; animation: slideInRight 1s ease-in-out; animation-delay: 0.4s;}
+.trendy-card:last-child{transition: all linear 0.25s; animation: slideInLeft 1s ease-in-out; animation-delay: 0.5s;}
+.card{transition: all linear 0.25s; animation: fadeIn 1s ease-in-out; animation-delay: 0.7s;}
+.oxygen{transition: all linear 0.25s; animation: slideInUp 1s ease-in-out; animation-delay: 0.8s;}
+.footer{transition: all linear 0.25s; animation: slideInDown 2s ease-in-out; animation-delay: 1s;}
