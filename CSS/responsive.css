@@ -1,0 +1,8 @@
+@media screen and (max-width: 992px){
+    body{background: url(../Image/background-992.jpg) no-repeat top/cover;}
+    .plants-card, .home-reviews, .sub-title, .Quick-links{display: none;}
+    .home{padding-left: 0px;padding-right: 0px;}
+    h1{font-size: 58px;padding-bottom: 16px;}
+    .main-title{text-align: center; margin: 0 auto;}
+    .responsive-auto-card{padding-right: 0px !important;}
+}
